@@ -1,6 +1,7 @@
 package ru.twisterkin.animalloaderexample;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -20,6 +21,6 @@ public class AnimalGenerator {
         animals.add(new Animal("Penguin", "Fedor", 45));
         animals.add(new Animal("Falcon", "Artem", 21));
         animals.add(new Animal("Hawk", "Mihail", 18));
-        return animals;
+        return Collections.unmodifiableList(animals);
     }
 }

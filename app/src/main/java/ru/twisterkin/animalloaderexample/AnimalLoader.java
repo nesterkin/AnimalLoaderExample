@@ -13,6 +13,7 @@ import java.util.Random;
 public class AnimalLoader extends AsyncTaskLoader<Animal> {
 
     private List<Animal> mAnimals;
+    private final static Random RANDOM_ANIMAL = new Random();
 
     public AnimalLoader(Context context) {
         super(context);
@@ -27,7 +28,6 @@ public class AnimalLoader extends AsyncTaskLoader<Animal> {
 
     @Override
     public Animal loadInBackground() {
-        Random random = new Random();
-        return mAnimals.get(random.nextInt(mAnimals.size()));
+        return mAnimals.get(RANDOM_ANIMAL.nextInt(mAnimals.size()));
     }
 }
