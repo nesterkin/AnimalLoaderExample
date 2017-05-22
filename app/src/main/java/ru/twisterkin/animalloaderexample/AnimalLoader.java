@@ -6,10 +6,6 @@ import android.support.v4.content.AsyncTaskLoader;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Created by Nesterkin Alexander
- */
-
 public class AnimalLoader extends AsyncTaskLoader<Animal> {
 
     private List<Animal> mAnimals;

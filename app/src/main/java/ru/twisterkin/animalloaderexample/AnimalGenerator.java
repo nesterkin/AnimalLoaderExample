@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by Nesterkin Alexander
- */
-
 public class AnimalGenerator {
     public static List<Animal> provideAnimals() {
         List<Animal> animals = new ArrayList<>();

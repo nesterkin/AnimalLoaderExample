@@ -1,9 +1,5 @@
 package ru.twisterkin.animalloaderexample;
 
-/**
- * Created by Nesterkin Alexander
- */
-
 class Animal {
 
     private String mSpecies;
